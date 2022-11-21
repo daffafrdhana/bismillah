@@ -1,0 +1,37 @@
+Pertama Kita Install git
+kemudian jangan lupa untuk menginstall git terlebih dahulu
+lalu kemudian jangan lupa cek version yang digunakan dengan perintah : "git --version"
+lalu buat user dan email yang akan digunakan pada github
+kemudian jangan lupa untuk  mendaftar kan user dan email git hub terlebih dahulu melalui git bash yang ada
+di vs code.
+lalu jika sudah silahkan git init untuk mengatifkan git yang akan digunakan.
+
+PENGUNAAN DASAR GIT :
+
+1. Pertama kita membuat sebuah file pada folder terserah 
+2. kemudian kita cek status file yang dibuat yaitu dengan perintah git status
+3. kemudian untuk menghilangkan status merah silahkan ketik perintah git add .
+4. jika sudah kemudian silahkan commit dengan perintah git commit -m "isikan keterangan" contoh 
+git commit -m "Ini file1 Daffa" 
+5. lalu push ke repo git, tetapi sebelum push buat ssh git terlebih dahulu
+6. ketik ssh-keygen -t rsa, isikan nama file dan enter aja hingga selesai
+7. lalu buka cat nama file ssh dengan perintah cat contoh : cat sshdaffa
+8. copy kunci ssh dari ssh-rsa hingga akhir kemudian copy ke ssh dan keygen github di setting beri nama 
+kunci ssh.
+9. jika sudah paste silahkan kembali ke git bash vs code lalu ketik eval $(ssh-agent -s)
+10. Kemudian ssh-add nama file ssh contoh : ssh-add sshdaffa
+11. jika sudah silahkan push dengan perintah : git push -u origin nama branch contoh : git push -u origin menghilangkan
+12. lalu ikuti syntax yang ada di ssh ketika menguhubungkan untuk remote repo git
+13. lalu jika sudah terhubung bisa dipush filekita ke repo git
+14. pada pertemuan 3 git mempelajari membuat branch dan menukar branch sesuai kebutuhan yang digunakan
+15. pertama buka github lalu ke branch buat branch yaitu contoh tambah branch development dan stading
+16. kenapa harus ada stading untuk menghubungkan antara branch main dan branch kemudian
+17. kemudian kita git fetch di git bash untuk menghubungkan seluruh branch
+18. lalu jika ingin mengubah branch kita bisa gunakan perintah git checkout branch yang akan digunakan contoh 
+kita dimain mau menggunakan branch development bisa gunakan perintah git checkout development lalu kemudian jika sudah
+coba buat satu file lalu add dan commit serta push di branch development.
+19. maka pasti data development bertambah tetapi main tidak bagaimana biar data pada 3 branch sama 
+20. pertama git checkout stading lalu kemudian kita merge atau gabungkan data development dengan stading
+21. peintah git merge development lalu git push -u origin stading
+22. bisa dilihat data di stading sama dnegan development
+23. untuk data main bisa gunakan cara yang sama  
